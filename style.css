@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+html {
+  height: 100%;
+}
+
+body {
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Open+Sans', sans-serif;
+  background-color: #3d3f54;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  color: white; /* white text color */
+}
+
+main {
+  flex: 1;
+  margin: 10rem auto;
+  width: 50vw;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+}
+
+header,
+footer {
+  background-color: #2d2f48;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  width: 100vw;
+  padding: 10px;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ff9a71;
+}
+
+.profile {
+  margin: 0 auto 20px;
+  width: 50vw;
+}
+
+.profile-image {
+  overflow: hidden; /* Ensures the image doesn't spill outside the boundary */
+  border-radius: 50%; /* Circular boundary */
+  width: 20rem; /* Width of the profile image container */
+  height: 20rem; /* Height of the profile image container */
+  display: flex; /* To center the image inside the container */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px; /* Center the container and add some space below */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: #ff9a71 solid 5px;
+}
+
+.profile-image img {
+  display: block; /* Removes any default inline spacing */
+  width: 100%; /* This will make sure the image covers the width */
+  object-fit: cover; /* Ensures the image covers the area, cropping if necessary */
+}
+
+#picture-name {
+  font-weight: bolder;
+  font-size: 4rem;
+  margin: 1rem 0;
+  color: #ff9a71;
+}
+
+.form {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form input {
+  margin-bottom: 10px; /* Adds space between the input and the button */
+}
+
+footer p {
+  margin: 0;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff9a71;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0.5rem;
+  height: 3rem;
+  width: 10rem;
+}
+
+button:hover {
+  filter: brightness(0.8);
+}
+
+input[type='text'] {
+  height: 2rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+}
+
+#staff-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.staff-header {
+  position: sticky;
+  top: 0;
+  background-color: #3d3f54; /* Adjust the color to match your header background */
+  padding: 10px 0;
+  z-index: 1000; /* Ensures the header stays above other elements */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+table {
+  /* Your table styles */
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 4rem;
+}
+
+th,
+td {
+  /* Your th and td styles */
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #2d2f48;
+}
+
+tr:hover {
+  background-color: #ff9a71;
+}
+
+#result,
+#validation-message,
+#grade-result {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #ff9a71;
+}

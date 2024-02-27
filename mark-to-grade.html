@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mark to Grade Converter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header-container"></div>
+    <main>
+      <h1>Mark to Grade Converter</h1>
+      <div class="form">
+        <label for="mark-input-box">Enter your mark:</label>
+        <input type="text" id="mark-input-box" />
+        <div id="validation-message"></div>
+        <div id="grade-result"></div>
+      </div>
+      <div class="actions">
+        <button onclick="convertMarkToGrade()">Convert</button>
+      </div>
+    </main>
+    <footer>
+      <p id="copyright-info"></p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

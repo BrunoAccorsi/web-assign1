@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staff Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header-container"></div>
+    <main>
+      <div class="staff-header">
+        <h1>Staff List</h1>
+        <div class="actions">
+          <button id="sort-name">Sort by Name</button>
+          <button id="sort-salary">Sort by Salary</button>
+        </div>
+      </div>
+      <table id="staff-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Location</th>
+            <th>ID</th>
+            <th>Start Date</th>
+            <th>Salary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Staff list will be populated here -->
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <p id="copyright-info"></p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Conversion</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header-container"></div>
+    <main>
+      <h1>Temperature Converter</h1>
+      <div class="form">
+        <label for="temp-fahrenheit">Enter temperature in Fahrenheit:</label>
+        <input type="text" id="temp-fahrenheit" />
+        <div id="result"></div>
+      </div>
+      <div class="actions">
+        <button id="to-celsius">Convert to Celsius</button>
+        <button id="to-kelvin">Convert to Kelvin</button>
+      </div>
+    </main>
+    <footer>
+      <p id="copyright-info"></p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
